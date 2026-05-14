@@ -1,8 +1,8 @@
 # Portfolio Project - Andular (Vue.js)
 
-### [Live Demo on GitHub Pages](https://dotkulov.github.io/JavaScript-KT6/)
+### [Live Demo on GitHub Pages](https://k1n9GG07.github.io/q/)
 
-### [GitHub Repository](https://github.com/dotkulov/JavaScript-KT6)
+### [GitHub Repository](https://github.com/k1n9GG07/q)
 
 ## Описание
 Практическая работа №5. Веб-приложение на Vue.js с использованием Vue Router.
@@ -18,3 +18,8 @@
 - Vue Router
 - Vite
 - CSS (Flexbox, Grid)
+
+## Инструкция по запуску локально
+1. Установите зависимости: `npm install`
+2. Запустите проект: `npm run dev`
+3. Сборка проекта: `npm run build`

@@ -20,7 +20,7 @@
     <footer>
       <div class="container">
         <div class="social-links">
-          <a href="https://github.com/dotkulov/JavaScript-KT6" target="_blank" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/k1n9GG07/q" target="_blank" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
           <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
