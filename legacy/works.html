@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andular - Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #21243D;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 858px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 90px 0 30px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 33px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #FF6464;
+        }
+
+        .featured-works {
+            padding: 0 0 83px 0;
+        }
+
+        .section-title {
+            font-size: 44px;
+            font-weight: 900;
+            margin-bottom: 55px;
+            line-height: 1.2;
+        }
+
+        .works-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .work-item {
+            display: flex;
+            gap: 18px;
+            padding: 30px 0;
+            border-bottom: 1px solid #E0E0E0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .work-item:hover {
+            background-color: #f8f8f8;
+        }
+
+        .work-image {
+            flex: 0 0 246px;
+            height: 180px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .work-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .work-content {
+            flex: 1;
+            padding: 10px 0;
+        }
+
+        .work-title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #21243D;
+        }
+
+        .work-meta {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            margin-bottom: 17px;
+        }
+
+        .work-year {
+            background: #142850;
+            color: white;
+            font-size: 18px;
+            font-weight: 900;
+            padding: 2px 12px;
+            border-radius: 16px;
+            line-height: 1;
+        }
+
+        .work-category {
+            font-size: 20px;
+            color: #8695A4;
+        }
+
+        .work-description {
+            font-size: 16px;
+            color: #21243D;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 51px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-bottom: 26px;
+        }
+
+        .social-links a {
+            font-size: 30px;
+            color: #21243D;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            color: #FF6464;
+            transform: translateY(-3px);
+        }
+
+        .social-links .fa-brands {
+            font-size: 24px;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #8695A4;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 20px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            .work-item {
+                flex-direction: column;
+            }
+
+            .work-image {
+                width: 100%;
+                flex: none;
+            }
+
+            .work-title {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+            }
+
+            .social-links {
+                gap: 25px;
+            }
+
+            .social-links a {
+                font-size: 24px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="works.html" class="nav-link active">Works</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="featured-works">
+                <h1 class="section-title">Work</h1>
+                <div class="works-list">
+                    <!-- Designing Dashboards -->
+                    <div class="work-item" onclick="location.href='details/work-detail-1.html'">
+                        <div class="work-image">
+                            <img src="https://cdn.dribbble.com/userupload/26371629/file/original-d48546a8d15ccd41f2204d0994d4e9e4.png?resize=400x0"
+                                alt="Designing Dashboards">
+                        </div>
+                        <div class="work-content">
+                            <h2 class="work-title">Designing Dashboards</h2>
+                            <div class="work-meta">
+                                <span class="work-year">2020</span>
+                                <span class="work-category">Dashboard</span>
+                            </div>
+                            <p class="work-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                sunt nostrud amet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vibrant Portraits of 2020 -->
+                    <div class="work-item" onclick="location.href='details/work-detail-2.html'">
+                        <div class="work-image">
+                            <img src="https://cdn.dribbble.com/userupload/25033596/file/original-ade3fac16201861a20add9ba3da417a2.png"
+                                alt="Vibrant Portraits of 2020">
+                        </div>
+                        <div class="work-content">
+                            <h2 class="work-title">Vibrant Portraits of 2020</h2>
+                            <div class="work-meta">
+                                <span class="work-year">2018</span>
+                                <span class="work-category">Illustration</span>
+                            </div>
+                            <p class="work-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                sunt nostrud amet.</p>
+                        </div>
+                    </div>
+
+                    <!-- 36 Days of Malayalam type -->
+                    <div class="work-item" onclick="location.href='details/work-detail-3.html'">
+                        <div class="work-image">
+                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiKo2Ki8cvaW8X8R2zUdwWSltLsC1Wp3pV8xYrWwY2ISqWYYCW"
+                                alt="36 Days of Malayalam type">
+                        </div>
+                        <div class="work-content">
+                            <h2 class="work-title">36 Days of Malayalam type</h2>
+                            <div class="work-meta">
+                                <span class="work-year">2018</span>
+                                <span class="work-category">Typography</span>
+                            </div>
+                            <p class="work-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                sunt nostrud amet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Components -->
+                    <div class="work-item" onclick="location.href='details/work-detail-4.html'">
+                        <div class="work-image">
+                            <img src="https://cdn.dribbble.com/userupload/21344927/file/original-9e96b25e62c9025b6319dee58ea1c1c6.png?resize=400x0"
+                                alt="Components">
+                        </div>
+                        <div class="work-content">
+                            <h2 class="work-title">Components</h2>
+                            <div class="work-meta">
+                                <span class="work-year">2018</span>
+                                <span class="work-category">Components, Design</span>
+                            </div>
+                            <p class="work-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">Copyright ©2020 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components - Work Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #21243D;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 682px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 90px 0 30px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 33px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #FF6464;
+        }
+
+        .work-detail {
+            padding: 0 0 83px 0;
+        }
+
+        .work-detail-title {
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .work-detail-meta {
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            margin-bottom: 23px;
+        }
+
+        .work-detail-year {
+            background: #FF7C7C;
+            color: white;
+            font-size: 18px;
+            font-weight: 900;
+            padding: 2px 12px;
+            border-radius: 16px;
+            line-height: 1;
+        }
+
+        .work-detail-category {
+            font-size: 20px;
+            color: #8695A4;
+        }
+
+        .work-detail-description {
+            font-size: 16px;
+            margin-bottom: 46px;
+            color: #21243D;
+        }
+
+        .work-detail-image {
+            width: 100%;
+            margin-bottom: 54px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-detail-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .work-detail-subtitle {
+            font-size: 30px;
+            font-weight: 500;
+            margin: 60px 0 17px 0;
+            color: #21243D;
+        }
+
+        .work-detail-subtitle-2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 40px 0 17px 0;
+            color: #21243D;
+        }
+
+        .work-detail-text {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #21243D;
+        }
+
+        footer {
+            padding: 51px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-bottom: 26px;
+        }
+
+        .social-links a {
+            font-size: 30px;
+            color: #21243D;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            color: #FF6464;
+            transform: translateY(-3px);
+        }
+
+        .social-links .fa-brands {
+            font-size: 24px;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #8695A4;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            color: #21243D;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+            padding: 8px 0;
+        }
+
+        .back-link:hover {
+            color: #FF6464;
+        }
+
+        .work-content {
+            margin-top: 40px;
+        }
+
+        .work-features {
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .work-features li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #21243D;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 20px 0;
+            }
+
+            .work-detail-title {
+                font-size: 28px;
+            }
+
+            .work-detail-subtitle {
+                font-size: 24px;
+            }
+
+            .work-detail-subtitle-2 {
+                font-size: 20px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+            }
+
+            .social-links {
+                gap: 25px;
+            }
+
+            .social-links a {
+                font-size: 24px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../works.html" class="nav-link">Works</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="work-detail">
+                <a href="../works.html" class="back-link">← Back to Works</a>
+
+                <h1 class="work-detail-title">Components</h1>
+                <div class="work-detail-meta">
+                    <span class="work-detail-year">2018</span>
+                    <span class="work-detail-category">Components, Design</span>
+                </div>
+                <p class="work-detail-description">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>
+
+                <div class="work-detail-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQFUQ7WFUC58uA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1700737501893?e=2147483647&v=beta&t=POFVuxXepZn4uiwqbTtIiv0Vqx-Lbgq3DvmTVPFjKoo"
+                        alt="Components Main Image">
+                </div>
+
+                <div class="work-content">
+                    <h2 class="work-detail-subtitle">Design System Development</h2>
+                    <p class="work-detail-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint.
+                    </p>
+
+                    <h3 class="work-detail-subtitle-2">UI Components</h3>
+                    <p class="work-detail-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                    </p>
+
+                    <div class="work-detail-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTnoQk4n6pRNxs_PO5hAXmYmkWsYsolpGHiw&s"
+                            alt="UI Components Collection">
+                    </div>
+
+                    <h2 class="work-detail-subtitle">Component Architecture</h2>
+                    <p class="work-detail-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+
+                    <div class="work-detail-image">
+                        <img src="https://sam-solutions.com/wp-content/uploads/Component-Based-Architecture-in-Software-Engineering@1x.webp"
+                            alt="Component Architecture">
+                    </div>
+
+                    <h3 class="work-detail-subtitle-2">Key Features</h3>
+                    <ul class="work-features">
+                        <li>Reusable UI components</li>
+                        <li>Consistent design patterns</li>
+                        <li>Modular architecture</li>
+                        <li>Cross-platform compatibility</li>
+                        <li>Developer documentation</li>
+                    </ul>
+
+                    <h2 class="work-detail-subtitle">Implementation</h2>
+                    <p class="work-detail-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+
+                    <div class="work-detail-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPB-b-r11FLDsf_xylctkHe51LuAbDSnR2YY0YI6GkEU571DEACrE6i767vjbbBgUQIEs&usqp=CAU"
+                            alt="Component Implementation">
+                    </div>
+
+                    <h3 class="work-detail-subtitle-2">Design Specifications</h3>
+                    <p class="work-detail-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">Copyright ©2020 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

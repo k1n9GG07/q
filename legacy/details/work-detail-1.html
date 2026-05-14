@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Dashboards - Andular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #21243D;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 858px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 90px 0 30px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 33px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #FF6464;
+        }
+
+        .work-detail {
+            padding: 78px 0 54px;
+        }
+
+        .work-detail-title {
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .work-detail-meta {
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            margin-bottom: 23px;
+        }
+
+        .work-detail-year {
+            background: #FF7C7C;
+            color: white;
+            font-size: 18px;
+            font-weight: 900;
+            padding: 0 10px;
+            border-radius: 16px;
+        }
+
+        .work-detail-category {
+            font-size: 20px;
+        }
+
+        .work-detail-description {
+            font-size: 16px;
+            margin-bottom: 46px;
+        }
+
+        .work-detail-image {
+            width: 100%;
+            margin-bottom: 54px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .work-detail-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .work-detail-subtitle {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 17px;
+        }
+
+        .work-detail-subtitle-2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 17px;
+        }
+
+        footer {
+            padding: 51px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-bottom: 26px;
+        }
+
+        .social-links a {
+            font-size: 30px;
+            color: #21243D;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            color: #FF6464;
+            transform: translateY(-3px);
+        }
+
+        .social-links .fa-brands,
+        .social-links .fa-solid {
+            font-size: 24px;
+        }
+
+        .social-links .feather {
+            width: 24px;
+            height: 24px;
+            stroke: currentColor;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            color: #21243D;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #FF6464;
+        }
+
+        @media (max-width: 768px) {
+            .work-detail-title {
+                font-size: 28px;
+            }
+
+            .work-detail-subtitle {
+                font-size: 24px;
+            }
+
+            .work-detail-subtitle-2 {
+                font-size: 20px;
+            }
+
+            .social-links {
+                gap: 25px;
+            }
+
+            .social-links a {
+                font-size: 24px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../works.html" class="nav-link">Works</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="work-detail">
+                <a href="../works.html" class="back-link">← Back to Works</a>
+
+                <h1 class="work-detail-title">Designing Dashboards</h1>
+                <div class="work-detail-meta">
+                    <span class="work-detail-year">2020</span>
+                    <span class="work-detail-category">Dashboard</span>
+                </div>
+                <p class="work-detail-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet.</p>
+
+                <div class="work-detail-image">
+                    <img src="https://cdn.dribbble.com/userupload/23595608/file/original-52ccb63b02e59a291fa30eb3e8ffd800.png?resize=1024x768&vertical=center"
+                        alt="Designing Dashboards">
+                </div>
+
+                <h2 class="work-detail-subtitle">Heading 1</h2>
+                <h3 class="work-detail-subtitle-2">Heading 2</h3>
+                <p class="work-detail-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet.</p>
+
+                <div class="work-detail-image">
+                    <img src="../photo/work-detail-1/red-car.png" alt="Dashboard Design Process">
+                </div>
+
+                <div class="work-detail-image">
+                    <img src="../photo/work-detail-1/total.png" alt="Dashboard Final Design">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+            </div>
+            <p class="copyright">Copyright ©2020 All rights reserved</p>
+        </footer>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>
