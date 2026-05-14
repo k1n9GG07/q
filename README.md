@@ -2,8 +2,6 @@
 
 ### [Live Demo on GitHub Pages](https://k1n9GG07.github.io/q/)
 
-### [GitHub Repository](https://github.com/k1n9GG07/q)
-
 ## Описание
 Практическая работа №5. Веб-приложение на Vue.js с использованием Vue Router.
 
