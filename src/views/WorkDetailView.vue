@@ -26,21 +26,39 @@
       </div>
     </div>
   </div>
-  <div v-else class="container">
-    <p>Work not found</p>
+  <div v-else class="container error-container">
+    <h2>Работа не найдена</h2>
+    <p>К сожалению, работа с ID "{{ $route.params.id }}" не найдена в нашей базе данных.</p>
+    <router-link to="/works" class="btn">Вернуться к списку работ</router-link>
   </div>
 </template>
 
 <script setup>
 import { useRoute } from 'vue-router'
 import { works } from '@/data/works'
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 
 const route = useRoute()
 const work = computed(() => works.find(w => w.id === route.params.id))
+
+watchEffect(() => {
+  if (!work.value && route.params.id) {
+    console.error(`[WorkDetail] Ошибка: Работа с ID "${route.params.id}" не найдена.`)
+  }
+})
 </script>
 
 <style scoped>
+.error-container {
+  padding: 100px 0;
+  text-align: center;
+}
+.error-container h2 {
+  margin-bottom: 20px;
+}
+.error-container p {
+  margin-bottom: 30px;
+}
 .work-detail {
   padding: 80px 0;
 }
